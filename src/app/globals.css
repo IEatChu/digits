@@ -1,14 +1,40 @@
 html,
 body {
+  --bs-dark: var(--nat-navbar-bg);
+  --bs-dark-rgb: var(--nat-navbar-bg-rgb);
   --bs-light-rgb: 236, 236, 236;
   box-sizing: border-box;
   height: 100%;
   padding: 0;
   margin: 0;
+  background:fixed center url("/digits.png");
+  background-size: cover;
 }
+body .navbar {
+  --bs-navbar-active-color: var(--nat-navbar-highlight-text);
+  --bs-navbar-brand-color: var(--nat-navbar-text-color);
+  --bs-navbar-brand-hover-color: var(--nat-navbar-highlight-text);
+  --bs-navbar-color: var(--nat-navbar-text-color);
+  --bs-navbar-hover-color: var(--nat-navbar-highlight-text);
+}
+
 .wrapper {
   box-sizing: border-box;
   min-height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+:root {
+  --nat-navbar-bg: darkgray;
+  --nat-navbar-bg-color: darkgray;
+  --nat-navbar-bg-rgb: 90, 90, 90;
+  --nat-navbar-text-color: white;
+  --nat-navbar-text-highlight: khaki;
+  --nat-navbar-highligt-text: khaki;
+  --nat-navbar-highlight-bg: lightgray;
+}
+
+footer, footer a {
+  color: var(--nat-navbar-text-color);
 }
