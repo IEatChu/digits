@@ -20,7 +20,7 @@ export default async function EditContactPage({ params }: { params: { id: string
   const contact: Contact | null = await prisma.contact.findUnique({
     where: { id },
   });
-  // console.log(stuff);
+
   if (!contact) {
     return notFound();
   }
