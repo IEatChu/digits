@@ -114,17 +114,18 @@ $ npm run lint
 $
 ```
 
-## User Interface Walkthrough
+# User Interface Walkthrough
 
-# Landing page
+## Landing page
 When you first bring up the application, you will see the landing page that provides a brief introduction to the capabilities of Digits:
 
 <img src="doc/landing-page1.png">
 
-# Register
+## Register
 
-The top-level directory structure is:
+If you do not yet have an account on the system, you can register by clicking on “Login”, then “Sign Up”:
 
+<img src="doc/register-page1.png">
 ```
 
 .github # holds the GitHub Continuous Integration action and Issue template.
