@@ -114,11 +114,14 @@ $ npm run lint
 $
 ```
 
-## Walkthrough
+## User Interface Walkthrough
 
-The following sections describe the major features of this template.
+# Landing page
+When you first bring up the application, you will see the landing page that provides a brief introduction to the capabilities of Digits:
 
-### Directory structure
+<img src="doc/landing-page1.png">
+
+# Register
 
 The top-level directory structure is:
 
