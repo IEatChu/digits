@@ -2,7 +2,7 @@ import { getServerSession } from 'next-auth';
 import { Col, Container, Row } from 'react-bootstrap';
 import { loggedInProtectedPage } from '@/lib/page-protection';
 import authOptions from '@/lib/authOptions';
-import { Contact } from '@/lib/validationSchemas';
+import { Contact } from '@prisma/client';
 import ContactCard from '@/components/ContactCard';
 import { prisma } from '@/lib/prisma';
 
@@ -22,6 +22,11 @@ const ListPage = async () => {
       owner,
     },
   });
+  const notes = await prisma.note.findMany({
+    where: {
+      owner,
+    },
+  });
   return (
     <main>
       <Container id="list" fluid className="py-3">
@@ -32,7 +37,7 @@ const ListPage = async () => {
               <Row xs={1} md={2} lg={3} className="g-4">
                 {contacts.map((contact) => (
                   <Col key={contact.firstName + contact.lastName}>
-                    <ContactCard contact={contact} />
+                    <ContactCard contact={contact} notes={notes.filter(note => (note.contactId === contact.id))} />
                   </Col>
                 ))}
               </Row>
