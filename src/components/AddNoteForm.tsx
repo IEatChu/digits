@@ -17,6 +17,7 @@ const onSubmit = async (data: {
   note: string;
   contactId: number;
   owner: string;
+
 }) => {
   // console.log(`onSubmit data: ${JSON.stringify(data, null, 2)}`);
   await addNote(data);
