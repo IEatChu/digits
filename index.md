@@ -116,25 +116,25 @@ $
 
 # User Interface Walkthrough
 
-#### Landing page
+## Landing page
 
 When you retrieve the app at http://localhost:3000, this is what should be displayed:
 
-![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/landing-page1.png)
+<img src="doc/landing-page1.png">
 
 The next step is to use the Login menu to either Login to an existing account or register a new account.
 
-#### Login page
+## Login page
 
 Clicking on the Login link, then on the Sign In menu item displays this page:
 
-![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/signin-page.png)
+<img src="doc/login-page1.png">
 
-#### Register page
+## Register page
 
 Alternatively, clicking on the Login link, then on the Sign Up menu item displays this page:
 
-![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/register1-page.png)
+<img src="doc/register-page1.png">
 
 #### Landing (after Login) page, non-Admin user
 
