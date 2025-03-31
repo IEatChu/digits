@@ -116,123 +116,11 @@ $
 
 # User Interface Walkthrough
 
-## Landing page
-When you first bring up the application, you will see the landing page that provides a brief introduction to the capabilities of Digits:
-
-<img src="doc/landing-page1.png">
-
-## Register
-
-If you do not yet have an account on the system, you can register by clicking on “Login”, then “Sign Up”:
-
-<img src="doc/register-page1.png">
-```
-
-.github # holds the GitHub Continuous Integration action and Issue template.
-
-config/ # holds configuration files, such as settings.development.json
-
-doc/ # holds developer documentation, user guides, etc.
-
-prisma/ # holds the Prisma ORM schema and seed.ts files.
-
-public/ # holds the public images.
-
-src/ # holds the application files.
-
-tests/ # holds the Playwright acceptance tests.
-
-.eslintrc.json # The ESLint configuration.
-
-.gitignore # don't commit VSCode settings files, node_modules, and settings.production.json
-
-```
-
-This structure separates documentation files (such as screenshots) and configuration files (such as the settings files) from the actual Next.js application.
-
-The src/ directory has this structure:
-
-```
-
-app/
-
-  add/ # The add route
-    page.tsx # The Add Stuff Page
-
-  admin/
-    page.tsx # The Admin Page
-
-  api/auth/[...nextauth]/
-    route.ts # The NextAuth configuration
-
-  auth/
-    change-password/
-      page.tsx # The Change Password Page
-
-    signin/
-      page.tsx # The Sign In Page
-
-    signout/
-      page.tsx # The Sign Out Page
-
-    signup/
-      page.tsx # The Sign Up / Register Page
-
-  edit/
-    page.tsx # The Edit Stuff Page
-
-  list/
-    page.tsx # The List Stuff Page
-
-  not-authorized/
-    page.tsx # The Not Authorized Page
-
-  layout.tsx # The layout of the application
-
-  page.tsx # The Landing Page
-
-  providers.tsx # Session providers.
-
-  components/
-    AddStuffForm.tsx # The React Hook Form for adding stuff.
-
-    EditStuffForm.tsx # The Edit Stuff Form.
-
-    Footer.tsx # The application footer.
-
-    LoadingSpinner.tsx # Indicates working.
-
-    Navbar.tsx # The application navbar.
-
-    StuffItem.tsx # Row in the list stuff page.
-
-    StuffItemAdmin.tsx # Row in the admin list stuff page.
-
-  lib/
-
-    dbActions.ts # Functions to manipulate the Postgres database.
-
-    page-protections.ts # Functions to check for logged in users and their roles.
-
-    prisma.ts # Singleton Prisma client.
-
-    validationSchemas.ts # Yup schemas for validating forms.
-
-  tests/ # playwright acceptance tests.
-
-```
-
-### Application functionality
-
-The application implements a simple CRUD application for managing "Stuff", which is a PostgreSQL table consisting of a name (String), a quantity (Number), a condition (one of 'excellent', 'good', 'fair', or 'poor') and an owner.
-
-By default, each user only sees the Stuff that they have created. However, the settings file enables you to define default accounts. If you define a user with the role "admin", then that user gets access to a special page which lists all the Stuff defined by all users.
-
 #### Landing page
 
 When you retrieve the app at http://localhost:3000, this is what should be displayed:
 
-![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/landing-page.png)
+![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/landing-page1.png)
 
 The next step is to use the Login menu to either Login to an existing account or register a new account.
 
@@ -246,7 +134,7 @@ Clicking on the Login link, then on the Sign In menu item displays this page:
 
 Alternatively, clicking on the Login link, then on the Sign Up menu item displays this page:
 
-![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/register-page.png)
+![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/register1-page.png)
 
 #### Landing (after Login) page, non-Admin user
 
