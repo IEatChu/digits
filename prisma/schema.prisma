@@ -43,6 +43,14 @@ model Stuff {
   condition Condition
   owner     String
 }
+model Note {
+  id        Int      @id @default(autoincrement())
+  contactId Int
+  note      String
+  owner     String
+  createdAt DateTime @default(now())
+  Contact   Contact  @relation(fields: [contactId], references: [id])
+}
 
 model Contact {
   id          Int    @id @default(autoincrement())
@@ -52,5 +60,6 @@ model Contact {
   image       String
   description String
   owner       String
+  notes       Note[]
 }
 
