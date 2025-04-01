@@ -141,19 +141,31 @@ After successfully logging in, the system takes you to your home page. It is jus
 
 <img src="doc/user-page1.png">
 
-## List Contacts
+## Add Contact page
+
+After logging in, here is the page that allows you to add new Contact:
+
+<img src="doc/add-page1.png">
+
+## List Contacts page
 
 Clicking on the List Contacts link brings up a page that lists all of the contacts associated with the logged in user:
 
+<img src="doc/list-page1.png">
 
+This page also allows the user to add timestamped “notes” detailing interactions they’ve had with the Contact. For example:
 
+<img src="doc/note-page1.png">
 
+## Edit Contacts
 
-## Admin page 
+From the List Contacts page, the user can click the “Edit” link associated with any Contact to bring up a page that allows that Contact information to be edited:
 
-To provide a simple example of a "super power" for Admin users, the Admin page lists all of the Stuff by all of the users:
+<img src="doc/edit-page1.png">
 
-![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/admin-list-stuff-page.png)
+## Admin page
+
+It is possible to designate one or more users as “Admins” through the settings file. When a user has the Admin role, they get access to a special NavBar link that retrieves a page listing all Contacts associated with all users:
 
 Note that non-admin users cannot get to this page, even if they type in the URL by hand.
 
