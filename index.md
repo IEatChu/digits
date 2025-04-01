@@ -118,59 +118,39 @@ $
 
 ## Landing page
 
-When you retrieve the app at http://localhost:3000, this is what should be displayed:
+When you first bring up the application, you will see the landing page that provides a brief introduction to the capabilities of Digits:
 
 <img src="doc/landing-page1.png">
 
-The next step is to use the Login menu to either Login to an existing account or register a new account.
-
-## Login page
-
-Clicking on the Login link, then on the Sign In menu item displays this page:
-
-<img src="doc/login-page1.png">
 
 ## Register page
 
-Alternatively, clicking on the Login link, then on the Sign Up menu item displays this page:
+If you do not yet have an account on the system, you can register by clicking on “Login”, then “Sign Up”:
 
 <img src="doc/register-page1.png">
 
-#### Landing (after Login) page, non-Admin user
+## Sign in page
 
-Once you log in (either to an existing account or by creating a new one), the navbar changes as follows:
+Click on the Login link, then click on the Signin link to bring up the Sign In page which allows you to login:
 
-![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/landing-after-login-page.png)
+<img src="doc/login-page1.png">
 
-You can now add new Stuff documents, and list the Stuff you have created. Note you cannot see any Stuff created by other users.
 
-#### Add Stuff page
+## User home page
 
-After logging in, here is the page that allows you to add new Stuff:
+After successfully logging in, the system takes you to your home page. It is just like the landing page, but the NavBar contains links to list contact and add new contacts: 
 
-![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/add-stuff-page.png)
+<img src="doc/user-page1.png">
 
-#### List Stuff page
+## List Contacts
 
-After logging in, here is the page that allows you to list all the Stuff you have created:
+Clicking on the List Contacts link brings up a page that lists all of the contacts associated with the logged in user:
 
-![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/list-stuff-page.png)
 
-You click the "Edit" link to go to the Edit Stuff page, shown next.
 
-#### Edit Stuff page
 
-After clicking on the "Edit" link associated with an item, this page displays that allows you to change and save it:
 
-![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/edit-stuff-page.png)
-
-#### Landing (after Login), Admin user
-
-You can define an "admin" user in the settings.json file. This user, after logging in, gets a special entry in the navbar:
-
-![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/admin-landing-page.png)
-
-#### Admin page (list all users stuff)
+## Admin page 
 
 To provide a simple example of a "super power" for Admin users, the Admin page lists all of the Stuff by all of the users:
 
