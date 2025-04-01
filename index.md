@@ -100,20 +100,6 @@ $ npm run dev
 
 If all goes well, the template application will appear at [http://localhost:3000](http://localhost:3000). You can login using the credentials in [settings.development.json](https://github.com/ics-software-engineering/nextjs-application-template/blob/main/config/settings.development.json), or else register a new account.
 
-### ESLint
-
-You can verify that the code obeys our coding standards by running ESLint over the code in the src/ directory with:
-
-```
-$ npm run lint
-
-> nextjs-application-template-1@0.1.0 lint
-> next lint
-
-✔ No ESLint warnings or errors
-$
-```
-
 # User Interface Walkthrough
 
 ## Landing page
