@@ -117,7 +117,6 @@ $
 # User Interface Walkthrough
 
 ## Landing page
-
 When you first bring up the application, you will see the landing page that provides a brief introduction to the capabilities of Digits:
 
 <img src="doc/landing-page1.png">
