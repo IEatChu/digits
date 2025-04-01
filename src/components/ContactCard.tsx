@@ -21,7 +21,9 @@ const ContactCard = ({ contact, notes }: { contact: Contact, notes: Note[] }) =>
     <Card.Body>
       <Card.Text>{contact.description}</Card.Text>
       <ListGroup variant="flush">
-        {notes.map((note) => <NoteItem key={note.id} note={note} />)}
+        {notes.map((note) => (
+          <NoteItem key={note.id} note={note} />
+        ))}
       </ListGroup>
       <AddNoteForm contact={contact} />
     </Card.Body>
