@@ -3,6 +3,6 @@
 #google_analytics:
 #show_downloads: true 
 #theme: jekyll-theme-merlot
-
+remote_theme: pages-themes/hacker
 #gems:
   #- jekyll-mentions
